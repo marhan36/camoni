@@ -8,7 +8,7 @@ export const findPresetName = (items, id) => items.find((item) => item.id === id
 
 export function createDemoData() {
   const date = currentDate()
-  const people = ['Marhan', 'Alya'].map(createPreset)
+  const people = ['Joko', 'Prabs'].map(createPreset)
   const categories = ['Makan & Minum', 'Transportasi', 'Belanja', 'Tagihan', 'Hiburan'].map(createPreset)
   return { people, categories, budgets: { [date.slice(0, 7)]: 5000000 }, expenses: [
     { id: '1', personId: people[0].id, categoryId: categories[0].id, nominal: 48000, tanggal: date, catatan: 'Makan siang' },
